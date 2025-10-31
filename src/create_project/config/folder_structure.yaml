@@ -1,0 +1,30 @@
+folder_structure:
+  01_ProjectManagement:
+    - 01_Meeting
+    - 02_Ideas
+  02_Data:
+    - 00_Raw_Data
+    - 01_Processed
+  03_Analysis:
+    - 00_Source
+    - 01_Code
+  08_Literature:
+  09_Dissemination:
+
+new_file_location:
+  meeting: 01_ProjectManagement/01_Meeting
+  idea: 01_ProjectManagement/02_Ideas
+  code: 03_Analysis/01_Code
+  literature: 08_Literature
+
+new_file_extensions:
+  meeting: md
+  idea: md
+  code: ipynb
+  literature: md
+
+new_file_templates:
+  meeting: meeting_template.md
+  idea: ideas_template.md
+  code: code_template.ipynb
+  literature: literature_template.md

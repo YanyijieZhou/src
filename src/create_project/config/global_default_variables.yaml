@@ -1,0 +1,7 @@
+global:
+  folder_structure_path:
+    folder_structure.yaml
+  base:
+    ./projects
+  template_path:
+    templates/
