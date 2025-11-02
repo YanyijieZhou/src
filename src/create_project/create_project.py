@@ -3,7 +3,7 @@ import os
 from datetime import datetime 
 import yaml
 import gc
-from src import getmy as getmy
+from src.my_py import getmy as getmy
 from pathlib import Path
 
 # import get_configure.py; purpose: to create dictionaries from yaml config files
