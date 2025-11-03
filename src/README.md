@@ -72,7 +72,7 @@ This will pop up prompts to guide you through creating a new project folder.
 
 
 ```
-new_file()
+cp.new_file()
 ```
 This will pop up prompts to guide you through creating a new file in an existing project folder.
 
