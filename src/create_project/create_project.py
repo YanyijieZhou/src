@@ -24,6 +24,7 @@ configdir = Path(__file__).resolve().parent / "config"
 folder_config = os.path.join(configdir, "folder_structure.yaml")
 global_config = os.path.join(configdir, "global_default_variables.yaml")
 
+package_location = str(Path(__file__).resolve().parent.parent.parent)
 
 folder_structure = getmy.get_yaml_section(folder_config, "folder_structure")
     # data structure:
@@ -67,7 +68,7 @@ def create_folders_from_structure(structure, base_path):
 def load_template(file_type):
     template_mapping = getmy.get_yaml_section(folder_config, 'new_file_templates')
     template_name = template_mapping[file_type]
-    template_file_path = os.path.join('./src/create_project/', global_config['template_path'], template_name)
+    template_file_path = os.path.join(package_location, global_config['template_path'], template_name)
     print(template_file_path)
     if not os.path.exists(template_file_path):
         raise FileNotFoundError(f"No template found for file type: {file_type}")
